@@ -47,4 +47,13 @@ class TicTacToe
       turn
     end
   end
+
+  def won?
+    WIN_COMBINATIONS.detect do |combo|
+      piece_1 = @board[combo[0]]
+      piece_2 = @board[combo[1]]
+      piece_3 = @board[combo[2]]
+      
+      ((piece_1==piece_2)&&(piece_2==piece_3)&&(position_taken?(combo[1])) ? combo : false
+    end
 end
