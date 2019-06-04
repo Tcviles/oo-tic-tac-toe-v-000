@@ -80,9 +80,9 @@ class TicTacToe
     end
 
     if won?
-      puts "Congratuations #{winner}!"
+      return "Congratuations #{winner}!"
     else
-      puts "Cat's Game!"
+      return "Cat's Game!"
     end
   end
 end
