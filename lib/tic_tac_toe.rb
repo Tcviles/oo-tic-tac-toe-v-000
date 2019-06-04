@@ -78,5 +78,10 @@ class TicTacToe
     until (won?||draw?)
       turn
     end
+
+    if won?
+      puts "Congratuations #{winner}!"
+    else
+      puts "Cats Game!"
   end
 end
