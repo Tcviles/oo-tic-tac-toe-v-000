@@ -57,4 +57,8 @@ class TicTacToe
       ((piece_1==piece_2)&&(piece_2==piece_3)&&(position_taken?(combo[1]))) ? combo : false
     end
   end
+
+  def full?
+    turn_count == 9
+  end
 end
